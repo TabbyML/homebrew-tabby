@@ -1,6 +1,6 @@
 # Usage
 
 ```bash
-brew tap tabbyml/tabby
+brew tap TabbyML/tabby
 brew install tabby
 ```
