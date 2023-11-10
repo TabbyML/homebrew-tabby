@@ -5,8 +5,8 @@ class Tabby < Formula
   depends_on :macos
   depends_on arch: :arm
 
-  url "https://github.com/TabbyML/tabby/releases/download/v0.5.4/tabby_aarch64-apple-darwin"
-  sha256 "f9d0b7c2d3b31cd42137af1a5ba4d838fcaaa7ae779aeddfd444b6ec641e2b95"
+  url "https://github.com/TabbyML/tabby/releases/download/v0.5.5/tabby_aarch64-apple-darwin"
+  sha256 "48e3f76bee7a5baed914e48a14f50256b2d08d8ea59773b26338250ab212468c"
 
   head "https://github.com/TabbyML/tabby/releases/download/nightly/tabby_aarch64-apple-darwin"
 
