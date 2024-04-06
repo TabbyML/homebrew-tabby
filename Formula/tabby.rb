@@ -12,5 +12,16 @@ class Tabby < Formula
   def install
     bin.install "tabby_aarch64-apple-darwin" => "tabby"
   end
-end
 
+  def tabby_log_path
+    var/"log/#{name}.log"
+  end
+
+  service do
+    run [opt_bin/"tabby", "serve", "--device", "metal", "--model", "StarCoder-1B"]
+    keep_alive true
+    log_path f.tabby_log_path
+    error_log_path f.tabby_log_path
+    working_dir HOMEBREW_PREFIX
+  end
+end
