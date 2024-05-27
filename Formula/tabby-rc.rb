@@ -5,10 +5,11 @@ class TabbyRc < Formula
   depends_on :macos
   depends_on arch: :arm
 
-  url "https://github.com/TabbyML/tabby/releases/download/v0.11.0-rc.6/tabby_aarch64-apple-darwin"
+  url "https://github.com/TabbyML/tabby/releases/download/v0.12.0-rc.0/tabby_aarch64-apple-darwin.zip"
 
   def install
-    bin.install "tabby_aarch64-apple-darwin" => "tabby"
+    bin.install "dist/tabby_aarch64-apple-darwin/tabby" => "tabby"
+    bin.install "dist/tabby_aarch64-apple-darwin/llama-server" => "llama-server"
   end
 end
 
