@@ -8,8 +8,9 @@ class TabbyRc < Formula
   url "https://github.com/TabbyML/tabby/releases/download/v0.12.0-rc.0/tabby_aarch64-apple-darwin.zip"
 
   def install
-    bin.install "dist/tabby_aarch64-apple-darwin/tabby" => "tabby"
-    bin.install "dist/tabby_aarch64-apple-darwin/llama-server" => "llama-server"
+    bin.install "tabby_aarch64-apple-darwin/tabby" => "tabby"
+    
+    bin.install "tabby_aarch64-apple-darwin/llama-server" => "llama-server"
   end
 end
 
