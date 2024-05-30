@@ -9,8 +9,7 @@ class TabbyRc < Formula
 
   def install
     bin.install "tabby_aarch64-apple-darwin/tabby" => "tabby"
+    bin.install "tabby_aarch64-apple-darwin/llama-server" => "llama-server"
   end
-
-  depends_on "llama.cpp"
 end
 
