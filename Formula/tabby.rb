@@ -6,6 +6,7 @@ class Tabby < Formula
   depends_on arch: :arm
 
   url "https://github.com/TabbyML/tabby/releases/download/v0.12.0/tabby_aarch64-apple-darwin.zip"
+  sha256 "9e59a1686a26e41cb1df864bca6ed4a5011997b89dc6e27b0c2906eed4abee90"
 
   head "https://github.com/TabbyML/tabby/releases/download/nightly/tabby_aarch64-apple-darwin.zip"
 
