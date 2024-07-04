@@ -1,5 +1,5 @@
 class Tabby < Formula
-  desc "Tabby: AI Coding Assitatnt"
+  desc "Tabby: AI Coding Assistant"
   homepage "https://github.com/TabbyML/tabby"
 
   depends_on :macos
@@ -18,8 +18,19 @@ class Tabby < Formula
     var/"log/#{name}.log"
   end
 
+  def caveats
+  <<~EOS
+    Please note tabby expects to read its configuration file from
+    #{Dir.home}/.tabby/config.toml
+  
+    For more information see https://tabby.tabbyml.com/docs/administration/model/
+
+    For a list of the available models see https://tabby.tabbyml.com/docs/models/
+  EOS
+  end
+
   service do
-    run [opt_bin/"tabby", "serve", "--device", "metal", "--model", "StarCoder-1B"]
+    run [opt_bin/"tabby", "serve", "--device", "metal"]
     keep_alive true
     log_path f.tabby_log_path
     error_log_path f.tabby_log_path

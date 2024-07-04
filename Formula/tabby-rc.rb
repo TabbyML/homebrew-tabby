@@ -1,5 +1,5 @@
 class TabbyRc < Formula
-  desc "Tabby: AI Coding Assitatnt"
+  desc "Tabby: AI Coding Assistant"
   homepage "https://github.com/TabbyML/tabby"
 
   depends_on :macos
