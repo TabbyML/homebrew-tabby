@@ -5,7 +5,7 @@ class Tabby < Formula
   depends_on :macos
   depends_on arch: :arm
 
-  url "https://github.com/TabbyML/tabby/releases/download/v0.14.0/tabby_aarch64-apple-darwin.zip"
+  url "https://github.com/TabbyML/tabby/releases/download/v0.15.0/tabby_aarch64-apple-darwin.zip"
 
   head "https://github.com/TabbyML/tabby/releases/download/nightly/tabby_aarch64-apple-darwin.zip"
 
