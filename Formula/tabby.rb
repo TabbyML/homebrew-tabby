@@ -2,7 +2,7 @@ class Tabby < Formula
   desc "Tabby: AI Coding Assistant"
   homepage "https://github.com/TabbyML/tabby"
 
-  version "0.18.0"
+  version "0.19.0"
 
   depends_on :macos
   depends_on arch: :arm
