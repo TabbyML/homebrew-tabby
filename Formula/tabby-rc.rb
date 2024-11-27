@@ -5,7 +5,7 @@ class TabbyRc < Formula
   depends_on :macos
   depends_on arch: :arm
 
-  url "https://github.com/TabbyML/tabby/releases/download/v0.21.0-rc.2/tabby_aarch64-apple-darwin.tar.gz"
+  url "https://github.com/TabbyML/tabby/releases/download/v0.21.0-rc.3/tabby_aarch64-apple-darwin.tar.gz"
 
   def install
     bin.install "tabby" => "tabby"
