@@ -12,8 +12,8 @@ class Tabby < Formula
   head "https://github.com/TabbyML/tabby/releases/download/nightly/tabby_aarch64-apple-darwin.tar.gz"
 
   def install
-    bin.install "tabby_aarch64-apple-darwin/tabby" => "tabby"
-    bin.install "tabby_aarch64-apple-darwin/llama-server" => "llama-server"
+    bin.install "tabby" => "tabby"
+    bin.install "llama-server" => "llama-server"
   end
 
   def tabby_log_path
