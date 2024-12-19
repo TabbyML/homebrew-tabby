@@ -7,9 +7,9 @@ class Tabby < Formula
   depends_on :macos
   depends_on arch: :arm
 
-  url "https://github.com/TabbyML/tabby/releases/download/v#{version}/tabby_aarch64-apple-darwin.zip"
+  url "https://github.com/TabbyML/tabby/releases/download/v#{version}/tabby_aarch64-apple-darwin.tar.gz"
 
-  head "https://github.com/TabbyML/tabby/releases/download/nightly/tabby_aarch64-apple-darwin.zip"
+  head "https://github.com/TabbyML/tabby/releases/download/nightly/tabby_aarch64-apple-darwin.tar.gz"
 
   def install
     bin.install "tabby_aarch64-apple-darwin/tabby" => "tabby"
@@ -24,7 +24,7 @@ class Tabby < Formula
   <<~EOS
     Please note tabby expects to read its configuration file from
     #{Dir.home}/.tabby/config.toml
-  
+
     For more information see https://tabby.tabbyml.com/docs/administration/model/
 
     For a list of the available models see https://tabby.tabbyml.com/docs/models/
