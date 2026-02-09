@@ -1,4 +1,4 @@
-class TabbyRc < Formula
+class TabbyNext < Formula
   desc "Tabby: AI Coding Assistant"
   homepage "https://github.com/TabbyML/tabby"
 
